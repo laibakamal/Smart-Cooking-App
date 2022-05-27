@@ -1,0 +1,30 @@
+html {
+    font-size: 14px;
+    color:aliceblue;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+        
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-image: url("../images/bg.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.wrapper {
+}
+
+.errors {
+    color: red;
+}
