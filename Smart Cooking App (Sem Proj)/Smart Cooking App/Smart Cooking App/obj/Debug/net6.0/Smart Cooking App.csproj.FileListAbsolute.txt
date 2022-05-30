@@ -1,0 +1,26 @@
+E:\EEEEEEEEEEE\SEMESTER 6\Visual Studio Projects\Smart Cooking App (Sem Proj)\Smart Cooking App (Sem Proj)\Smart Cooking App\Smart Cooking App\bin\Debug\net6.0\appsettings.Development.json
+E:\EEEEEEEEEEE\SEMESTER 6\Visual Studio Projects\Smart Cooking App (Sem Proj)\Smart Cooking App (Sem Proj)\Smart Cooking App\Smart Cooking App\bin\Debug\net6.0\appsettings.json
+E:\EEEEEEEEEEE\SEMESTER 6\Visual Studio Projects\Smart Cooking App (Sem Proj)\Smart Cooking App (Sem Proj)\Smart Cooking App\Smart Cooking App\bin\Debug\net6.0\Smart Cooking App.staticwebassets.runtime.json
+E:\EEEEEEEEEEE\SEMESTER 6\Visual Studio Projects\Smart Cooking App (Sem Proj)\Smart Cooking App (Sem Proj)\Smart Cooking App\Smart Cooking App\bin\Debug\net6.0\Smart Cooking App.exe
+E:\EEEEEEEEEEE\SEMESTER 6\Visual Studio Projects\Smart Cooking App (Sem Proj)\Smart Cooking App (Sem Proj)\Smart Cooking App\Smart Cooking App\bin\Debug\net6.0\Smart Cooking App.deps.json
+E:\EEEEEEEEEEE\SEMESTER 6\Visual Studio Projects\Smart Cooking App (Sem Proj)\Smart Cooking App (Sem Proj)\Smart Cooking App\Smart Cooking App\bin\Debug\net6.0\Smart Cooking App.runtimeconfig.json
+E:\EEEEEEEEEEE\SEMESTER 6\Visual Studio Projects\Smart Cooking App (Sem Proj)\Smart Cooking App (Sem Proj)\Smart Cooking App\Smart Cooking App\bin\Debug\net6.0\Smart Cooking App.dll
+E:\EEEEEEEEEEE\SEMESTER 6\Visual Studio Projects\Smart Cooking App (Sem Proj)\Smart Cooking App (Sem Proj)\Smart Cooking App\Smart Cooking App\bin\Debug\net6.0\Smart Cooking App.pdb
+E:\EEEEEEEEEEE\SEMESTER 6\Visual Studio Projects\Smart Cooking App (Sem Proj)\Smart Cooking App (Sem Proj)\Smart Cooking App\Smart Cooking App\obj\Debug\net6.0\Smart Cooking App.csproj.AssemblyReference.cache
+E:\EEEEEEEEEEE\SEMESTER 6\Visual Studio Projects\Smart Cooking App (Sem Proj)\Smart Cooking App (Sem Proj)\Smart Cooking App\Smart Cooking App\obj\Debug\net6.0\Smart Cooking App.GeneratedMSBuildEditorConfig.editorconfig
+E:\EEEEEEEEEEE\SEMESTER 6\Visual Studio Projects\Smart Cooking App (Sem Proj)\Smart Cooking App (Sem Proj)\Smart Cooking App\Smart Cooking App\obj\Debug\net6.0\Smart Cooking App.AssemblyInfoInputs.cache
+E:\EEEEEEEEEEE\SEMESTER 6\Visual Studio Projects\Smart Cooking App (Sem Proj)\Smart Cooking App (Sem Proj)\Smart Cooking App\Smart Cooking App\obj\Debug\net6.0\Smart Cooking App.AssemblyInfo.cs
+E:\EEEEEEEEEEE\SEMESTER 6\Visual Studio Projects\Smart Cooking App (Sem Proj)\Smart Cooking App (Sem Proj)\Smart Cooking App\Smart Cooking App\obj\Debug\net6.0\Smart Cooking App.csproj.CoreCompileInputs.cache
+E:\EEEEEEEEEEE\SEMESTER 6\Visual Studio Projects\Smart Cooking App (Sem Proj)\Smart Cooking App (Sem Proj)\Smart Cooking App\Smart Cooking App\obj\Debug\net6.0\Smart Cooking App.MvcApplicationPartsAssemblyInfo.cache
+E:\EEEEEEEEEEE\SEMESTER 6\Visual Studio Projects\Smart Cooking App (Sem Proj)\Smart Cooking App (Sem Proj)\Smart Cooking App\Smart Cooking App\obj\Debug\net6.0\Smart Cooking App.RazorAssemblyInfo.cache
+E:\EEEEEEEEEEE\SEMESTER 6\Visual Studio Projects\Smart Cooking App (Sem Proj)\Smart Cooking App (Sem Proj)\Smart Cooking App\Smart Cooking App\obj\Debug\net6.0\Smart Cooking App.RazorAssemblyInfo.cs
+E:\EEEEEEEEEEE\SEMESTER 6\Visual Studio Projects\Smart Cooking App (Sem Proj)\Smart Cooking App (Sem Proj)\Smart Cooking App\Smart Cooking App\obj\Debug\net6.0\staticwebassets.build.json
+E:\EEEEEEEEEEE\SEMESTER 6\Visual Studio Projects\Smart Cooking App (Sem Proj)\Smart Cooking App (Sem Proj)\Smart Cooking App\Smart Cooking App\obj\Debug\net6.0\staticwebassets.development.json
+E:\EEEEEEEEEEE\SEMESTER 6\Visual Studio Projects\Smart Cooking App (Sem Proj)\Smart Cooking App (Sem Proj)\Smart Cooking App\Smart Cooking App\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\EEEEEEEEEEE\SEMESTER 6\Visual Studio Projects\Smart Cooking App (Sem Proj)\Smart Cooking App (Sem Proj)\Smart Cooking App\Smart Cooking App\obj\Debug\net6.0\scopedcss\bundle\Smart Cooking App.styles.css
+E:\EEEEEEEEEEE\SEMESTER 6\Visual Studio Projects\Smart Cooking App (Sem Proj)\Smart Cooking App (Sem Proj)\Smart Cooking App\Smart Cooking App\obj\Debug\net6.0\scopedcss\projectbundle\Smart Cooking App.bundle.scp.css
+E:\EEEEEEEEEEE\SEMESTER 6\Visual Studio Projects\Smart Cooking App (Sem Proj)\Smart Cooking App (Sem Proj)\Smart Cooking App\Smart Cooking App\obj\Debug\net6.0\Smart Cooking App.dll
+E:\EEEEEEEEEEE\SEMESTER 6\Visual Studio Projects\Smart Cooking App (Sem Proj)\Smart Cooking App (Sem Proj)\Smart Cooking App\Smart Cooking App\obj\Debug\net6.0\refint\Smart Cooking App.dll
+E:\EEEEEEEEEEE\SEMESTER 6\Visual Studio Projects\Smart Cooking App (Sem Proj)\Smart Cooking App (Sem Proj)\Smart Cooking App\Smart Cooking App\obj\Debug\net6.0\Smart Cooking App.pdb
+E:\EEEEEEEEEEE\SEMESTER 6\Visual Studio Projects\Smart Cooking App (Sem Proj)\Smart Cooking App (Sem Proj)\Smart Cooking App\Smart Cooking App\obj\Debug\net6.0\Smart Cooking App.genruntimeconfig.cache
+E:\EEEEEEEEEEE\SEMESTER 6\Visual Studio Projects\Smart Cooking App (Sem Proj)\Smart Cooking App (Sem Proj)\Smart Cooking App\Smart Cooking App\obj\Debug\net6.0\ref\Smart Cooking App.dll
