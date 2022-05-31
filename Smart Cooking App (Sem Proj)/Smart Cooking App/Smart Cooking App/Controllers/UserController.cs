@@ -64,8 +64,16 @@ namespace CakesOrder.Controllers
             }
 
         }
+        //[HttpGet]
+        //public ViewResult SignUp()
+        //{
+        //    return View();
+        //}
+
+
+
         [HttpGet]
-        public ViewResult SignUp()
+        public ViewResult Home()
         {
             return View();
         }
