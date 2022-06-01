@@ -16,9 +16,9 @@ html {
 
 body {
     margin-bottom: 60px;
-    background-image: url("../images/bg.png");
-    background-repeat: no-repeat;
-    background-size:contain;
+    background-repeat: repeat-y;
+    background-image: url("../Images/bg.png");
+    background-size:cover;
 }
 
 .wrapper {
