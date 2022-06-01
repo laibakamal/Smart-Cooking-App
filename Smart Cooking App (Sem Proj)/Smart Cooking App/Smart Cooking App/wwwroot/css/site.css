@@ -18,7 +18,7 @@ body {
     margin-bottom: 60px;
     background-image: url("../images/bg.png");
     background-repeat: no-repeat;
-    background-size:2000px 1500px;
+    background-size:contain;
 }
 
 .wrapper {
@@ -26,4 +26,11 @@ body {
 
 .errors {
     color: red;
+}
+
+
+.logoImage
+{
+    height:60px;
+    width:60px;
 }
