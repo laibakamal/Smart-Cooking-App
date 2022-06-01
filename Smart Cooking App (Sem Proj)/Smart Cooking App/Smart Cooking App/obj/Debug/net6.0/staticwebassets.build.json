@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gs2dmdsfG3GcZIJZa+ndaLPaQOEaQnFzBc3atU8t7xw=",
+  "Hash": "pUvoP6+OWpi1GverlhdmgqVly/O/Q4mYSaQS2dlAPJM=",
   "Source": "Smart Cooking App",
   "BasePath": "_content/Smart Cooking App",
   "Mode": "Default",
@@ -117,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\logo.png"
+    },
+    {
+      "Identity": "E:\\EEEEEEEEEEE\\SEMESTER 6\\Visual Studio Projects\\Smart Cooking App (Sem Proj)\\Smart Cooking App (Sem Proj)\\Smart Cooking App\\Smart Cooking App\\wwwroot\\Images\\logo1.png",
+      "SourceId": "Smart Cooking App",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\EEEEEEEEEEE\\SEMESTER 6\\Visual Studio Projects\\Smart Cooking App (Sem Proj)\\Smart Cooking App (Sem Proj)\\Smart Cooking App\\Smart Cooking App\\wwwroot\\",
+      "BasePath": "_content/Smart Cooking App",
+      "RelativePath": "Images/logo1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\logo1.png"
     },
     {
       "Identity": "E:\\EEEEEEEEEEE\\SEMESTER 6\\Visual Studio Projects\\Smart Cooking App (Sem Proj)\\Smart Cooking App (Sem Proj)\\Smart Cooking App\\Smart Cooking App\\wwwroot\\js\\site.js",
