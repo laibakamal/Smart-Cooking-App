@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gs2dmdsfG3GcZIJZa+ndaLPaQOEaQnFzBc3atU8t7xw=",
+  "Hash": "YsOZkJYoQUBdK9haO4qjMN1TMNYOJcWDzFLGblAGYvo=",
   "Source": "Smart Cooking App",
   "BasePath": "_content/Smart Cooking App",
   "Mode": "Default",
@@ -49,6 +49,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "E:\\EEEEEEEEEEE\\SEMESTER 6\\Visual Studio Projects\\Smart Cooking App (Sem Proj)\\Smart Cooking App (Sem Proj)\\Smart Cooking App\\Smart Cooking App\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Smart Cooking App.bundle.scp.css"
+    },
+    {
+      "Identity": "E:\\EEEEEEEEEEE\\SEMESTER 6\\Visual Studio Projects\\Smart Cooking App (Sem Proj)\\Smart Cooking App (Sem Proj)\\Smart Cooking App\\Smart Cooking App\\wwwroot\\css\\HomeStyle1.css",
+      "SourceId": "Smart Cooking App",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\EEEEEEEEEEE\\SEMESTER 6\\Visual Studio Projects\\Smart Cooking App (Sem Proj)\\Smart Cooking App (Sem Proj)\\Smart Cooking App\\Smart Cooking App\\wwwroot\\",
+      "BasePath": "_content/Smart Cooking App",
+      "RelativePath": "css/HomeStyle1.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\HomeStyle1.css"
+    },
+    {
+      "Identity": "E:\\EEEEEEEEEEE\\SEMESTER 6\\Visual Studio Projects\\Smart Cooking App (Sem Proj)\\Smart Cooking App (Sem Proj)\\Smart Cooking App\\Smart Cooking App\\wwwroot\\css\\HomeStyle2.css",
+      "SourceId": "Smart Cooking App",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\EEEEEEEEEEE\\SEMESTER 6\\Visual Studio Projects\\Smart Cooking App (Sem Proj)\\Smart Cooking App (Sem Proj)\\Smart Cooking App\\Smart Cooking App\\wwwroot\\",
+      "BasePath": "_content/Smart Cooking App",
+      "RelativePath": "css/HomeStyle2.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\HomeStyle2.css"
     },
     {
       "Identity": "E:\\EEEEEEEEEEE\\SEMESTER 6\\Visual Studio Projects\\Smart Cooking App (Sem Proj)\\Smart Cooking App (Sem Proj)\\Smart Cooking App\\Smart Cooking App\\wwwroot\\css\\site.css",
