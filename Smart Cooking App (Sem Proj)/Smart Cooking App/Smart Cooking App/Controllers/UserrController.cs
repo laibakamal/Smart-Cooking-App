@@ -45,21 +45,21 @@ namespace Smart_Cooking_App.Controllers
 
 
         [HttpPost]
-        public IActionResult SignUp(Userr u)
+        public IActionResult SignUp([FromBody] Userr u)
         {
             //if (ModelState.IsValid)
             //{
-            UserrRepository userRep = new UserrRepository();
-            if (userRep.UserExistForLogin(u))
+            UserrRepository userRepo = new UserrRepository();
+            if (userRepo.UserExistForLogin(u))
             {
-
                 ViewBag.UserExists = "Username or Email already exists";
                 return View();
             }
             else
             {
-                userRep.addUser(u);
-                return View("Login");
+                userRepo.addUser(u);
+                return View();
+                //return View("Login");
             }
             //}
             //else

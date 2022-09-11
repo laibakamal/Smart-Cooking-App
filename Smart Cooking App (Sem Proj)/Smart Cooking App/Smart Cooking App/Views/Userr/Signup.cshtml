@@ -9,6 +9,36 @@
 
 
 
+<script type="text/javascript">
+    function submitUser() {
+        var data = {
+            Id:"1",
+            Name: $("#name").val(),
+            Username: $("#username").val(),
+            Email: $("#email").val(),
+            Password: $("#password").val(),
+            ConfirmPassword: $("#repeatPassword").val(),
+            Role: "User"
+        }
+        console.log(data);
+        $.ajax({
+            type: 'POST',
+            url: '/Userr/SignUp',
+            contentType: 'application/json; charset=utf-8',
+            data: JSON.stringify(data),
+            dataType: 'json',
+            success: function (data) {
+                alert('Successfully received Data ');
+                console.log(data);
+            },
+            error: function () {
+                console.log('Failed');
+            }
+        })
+    }
+</script>
+
+
 
 <section class="vh-100" style="background-color: #eee;">
   <div class="container h-100">
@@ -21,8 +51,9 @@
                   
                 <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
 
-                <form class="mx-1 mx-md-4"  action="/Userr/SignUp" method="post">
-
+                <form class="mx-1 mx-md-4">
+                     @*action="/Userr/SignUp" method="post"*@
+                    
                   <div class="d-flex flex-row align-items-center mb-4">
                     <i class="fa fa-user fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
@@ -36,7 +67,7 @@
                     <i class="fa fa-user fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
                         <label asp-for="Username" class="form-label">Username</label>
-                      <input asp-for="Username" class="form-control" id="name">
+                      <input asp-for="Username" class="form-control" id="username">
                        <span asp-validation-for="Username" class ="errors" ></span>
                     </div>
                   </div>
@@ -70,7 +101,7 @@
                   </div>
 
                   <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                    <button type="submit" class="btn btn-primary btn-lg" asp-controller="Userr">Register</button>
+                    <button type="button" class="btn btn-primary btn-lg" onclick="submitUser()">Register</button>
                   </div>
 
                   
@@ -105,4 +136,10 @@
           background-image: none;
       }
     </style>
+}
+
+
+
+ @section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
