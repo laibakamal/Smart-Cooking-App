@@ -1,4 +1,23 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿//Why jQuery methods are inside a document ready event
+//This is to prevent any jQuery code from running before the document is finished loading (is ready).
 
-// Write your JavaScript code.
+$(document).ready(function () {
+
+    $('#see-more').click(function () {
+        $.get("/Home/Album", function (result) {
+            $('#partialPlaceHolder').append(result);
+        });
+    });
+});
+
+
+
+
+$(document).ready(function () {
+
+    $('#admin-see-more').click(function () {
+        $.get("/Admin/AdminAlbum", function (result) {
+            $('#partialPlaceHolder').append(result);
+        });
+    });
+});

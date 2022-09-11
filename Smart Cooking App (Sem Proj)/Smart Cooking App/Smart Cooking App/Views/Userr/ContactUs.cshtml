@@ -1,0 +1,125 @@
+﻿     <partial name="~/Views/Shared/PartialViews/Nav.cshtml"/>
+
+
+<!--Section: Contact v.2-->
+<section class="mb-4 px-5">
+
+    <!--Section heading-->
+    <h2 class="display-5 text-center mb-5 mt-5 pb-2 text-warning fw-bold h1-responsive">Contact Us</h2>
+    <!--Section description-->
+    <h5 class="mx-5 px-5 text-center mb-5 text-white">
+   Do you have any questions? Please do not hesitate to contact us directly. 
+  </h5>
+
+    <div class="row d-flex justify-content-center align-items-center mx-5 py-5" style="background-color: #eee; border-radius:25px;">
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-3">
+                        <div class="md-form mb-0">
+                            <label class="text-black" for="name" class="">Your name</label>
+                            <input type="text" id="name" name="name" class="form-control">
+                         
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <label class="text-black" for="email" class="">Your email</label>
+                            <input type="text" id="email" name="email" class="form-control">
+                            
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row mb-3">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                             <label class="text-black" for="subject" class="">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control">
+                           
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row mb-4">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <label class="text-black" for="message">Your message</label>
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary">Send</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fa fa-map-marker fa-2x text-black"></i>
+                    <p class="text-black">PUCIT Old Campus, Lahore</p>
+                </li>
+
+                <li><i class="fa fa-phone mt-4 fa-2x  text-black"></i>
+                    <p class="text-black">0308-6750509</p>
+                </li>
+
+                <li><i class="fa fa-envelope mt-4 fa-2x  text-black"></i>
+                    <p class="text-black">laibakamal003@gmail.com</p>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
+    </div>
+
+</section>
+<!--Section: Contact v.2-->
+
+
+
+
+     <footer class="bg-dark row row-cols-1 row-cols-sm-2 row-cols-md-5 mt-5 mb-0 py-5">
+        <partial name="~/Views/Shared/PartialViews/Footer.cshtml"/>
+     </footer>
+
+                
+                
+
+                
+@section SetLoginBgImg
+{
+    <style>
+        body
+      {
+          background-image: none;
+      }
+    </style>
+}

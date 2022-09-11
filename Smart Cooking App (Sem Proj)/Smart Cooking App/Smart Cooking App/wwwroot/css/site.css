@@ -3,7 +3,7 @@ html {
     color: aliceblue;
 }
 
-@media (min-width:  px) {
+@media (min-width: px) {
     html {
         font-size: 16px;
     }
@@ -14,11 +14,54 @@ html {
     min-height: 100%;
 }
 
+/*body {
+    position: relative;*/
+/* background-repeat: repeat-y;*/
+/*background-image: linear-gradient(to right, black, gray);*/
+/*background-image: url("../Images/bg.png");*/
+/*background-size: contain;*/
+/*opacity: 0.5;*/
+/*}
+
+    body::before {
+        content: "";
+        position: absolute;
+        background-repeat: repeat-y;*/
+/*        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;*/
+/*background-image: url("../Images/bg.png");
+        background-size: contain;
+        opacity: 0.5;
+    }*/
+
+
+
+
 body {
-    margin-bottom: 60px;
-    background-repeat: repeat-y;
-    background-image: url("../Images/bg.png");
-    background-size:cover;
+    position: relative;
+}
+
+    body::before {
+        content: ' ';
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../Images/bg.png");
+        background-repeat: repeat-y;
+        background-size: contain;
+        background-position: 50% 0;
+        opacity: 80%;
+        z-index: -1;
+        filter: brightness(40%);
+    }
+
+.container {
+    position: relative;
 }
 
 .wrapper {
@@ -29,8 +72,7 @@ body {
 }
 
 
-.logoImage
-{
-    height:100px;
-    width:100px;
+.logoImage {
+    height: 100px;
+    width: 100px;
 }

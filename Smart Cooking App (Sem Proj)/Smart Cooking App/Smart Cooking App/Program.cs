@@ -1,7 +1,12 @@
+using Smart_Cooking_App.Interfaces;
+using Smart_Cooking_App.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<IUserRepo, UserrRepository>();
+builder.Services.AddScoped<IRecipeRepo, RecipeRepository>();
 
 var app = builder.Build();
 
@@ -20,8 +25,10 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+
+
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=User}/{action=Home}/{id?}");
+    pattern: "{controller=Userr}/{action=Home}/{id?}");
 
 app.Run();

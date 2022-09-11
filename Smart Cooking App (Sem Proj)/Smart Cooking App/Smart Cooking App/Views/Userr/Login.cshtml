@@ -1,0 +1,58 @@
+﻿@using Smart_Cooking_App.Models;
+@model Userr
+
+
+<section class="mt-5" style="background-color: white">
+  <div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-9 col-lg-6 col-xl-5">
+        <img src="~/Images/loginFormImg.png"
+          class="img-fluid" alt="Sample image">
+      </div>
+      <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+           <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Login</p>
+        <form action="/User/Login" method="post" >
+
+
+            <!-- Email input -->
+          <div class="form-outline mb-4">
+            <label asp-for="Email" >Email</label>
+             <input asp-for="Email" class="form-control" id="exampleInputEmail1">
+             <span asp-validation-for="Email" class ="errors" ></span>
+          </div>
+
+          <!-- Password input -->
+          <div class="form-outline mb-3">
+            <label asp-for="Password" class="form-label">Password</label>
+             <input asp-for="Password" class="form-control" id="exampleInputPassword1">
+             <span asp-validation-for="Password" class ="errors" ></span>
+                            
+             <span class ="errors">@ViewBag.validation</span>
+          </div>
+
+          <div class="text-center text-lg-start mt-4 pt-2">
+            <button type="submit" class="btn btn-primary btn-lg"
+              style="padding-left: 2.5rem; padding-right: 2.5rem;" asp-controller="Userr" asp-action="Login">Login</button>
+            <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="/Userr/Signup" method="get"
+                class="link-danger">Register</a></p>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+@section SetLoginBgImg
+{
+    <style>
+        body
+      {
+          background-image: none;
+      }
+    </style>
+}
