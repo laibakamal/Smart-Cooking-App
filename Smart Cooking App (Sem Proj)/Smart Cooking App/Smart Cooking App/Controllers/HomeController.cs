@@ -28,10 +28,5 @@ namespace Smart_Cooking_App.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-
-        public IActionResult Album()
-        {
-            return View("PartialViews/Albums");
-        }
     }
 }

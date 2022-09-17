@@ -18,6 +18,9 @@ namespace Smart_Cooking_App.Models
         [Required(ErrorMessage = "Please enter recipe ingredients")]
         public string? Ingredients { get; set; }
 
+        [Required(ErrorMessage = "Please enter text to display on thumbnail")]
+        public string? ThumbnailText { get; set; }
+
         public string? ImagePath { get; set; }
     }
 }

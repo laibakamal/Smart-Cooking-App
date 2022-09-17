@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Smart_Cooking_App.Models;
 using Smart_Cooking_App.Repositories;
+using Smart_Cooking_App.Interfaces;
+
 namespace Smart_Cooking_App.Controllers
 {
     public class UserrController : Controller
@@ -11,7 +13,7 @@ namespace Smart_Cooking_App.Controllers
             if (u.Email!=null && u.Password != null)
             {
                 Console.WriteLine("Login done");
-                UserrRepository userRep = new UserrRepository();
+                IUserRepo userRep = new UserrRepository();
                 if (userRep.UserExist(u))
                 {
                     IList<Userr> List;
@@ -49,7 +51,7 @@ namespace Smart_Cooking_App.Controllers
         {
             //if (ModelState.IsValid)
             //{
-            UserrRepository userRepo = new UserrRepository();
+            IUserRepo userRepo = new UserrRepository();
             if (userRepo.UserExistForLogin(u))
             {
                 ViewBag.UserExists = "Username or Email already exists";
@@ -80,7 +82,32 @@ namespace Smart_Cooking_App.Controllers
         [HttpGet]
         public ViewResult Home()
         {
-            return View();
+            IRecipeRepo recipeRepo = new RecipeRepository();
+            IList<Recipe> list = recipeRepo.GetRecipes();
+            IList<Recipe> trimmedList = new List<Recipe>();
+
+            for (int count = 0; count<9; count++)
+            {
+                trimmedList.Add(list[count]);
+            }
+            GlobalVariable.RecipeCount=(GlobalVariable.RecipeCount+9);
+            return View(trimmedList);
+        }
+
+
+        [HttpGet]
+        public IActionResult Album()
+        {
+            IRecipeRepo recipeRepo = new RecipeRepository();
+            IList<Recipe> list = recipeRepo.GetRecipes();
+            IList<Recipe> trimmedList = new List<Recipe>();
+
+            for (int count = 0; count<9; count++)
+            {
+                trimmedList.Add(list[count]);
+            }
+            GlobalVariable.RecipeCount=(GlobalVariable.RecipeCount+9);
+            return View(trimmedList);
         }
 
         [HttpGet]

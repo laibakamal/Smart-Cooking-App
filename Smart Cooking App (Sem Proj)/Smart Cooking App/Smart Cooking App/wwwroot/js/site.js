@@ -4,7 +4,7 @@
 $(document).ready(function () {
 
     $('#see-more').click(function () {
-        $.get("/Home/Album", function (result) {
+        $.get("/Userr/Album", function (result) {
             $('#partialPlaceHolder').append(result);
         });
     });
