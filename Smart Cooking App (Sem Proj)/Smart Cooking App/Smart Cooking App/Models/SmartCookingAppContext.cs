@@ -63,5 +63,35 @@ namespace Smart_Cooking_App.Models
 
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+
+
+        public override int SaveChanges()
+        {
+            var tracker = ChangeTracker;
+            foreach (var entry in tracker.Entries())
+            {
+                if (entry.Entity is FullAuditModel)
+                {
+                    var referenceEntity = entry.Entity as FullAuditModel;
+                    switch (entry.State)
+                    {
+                        case EntityState.Added:
+                            referenceEntity.CreatedDate = DateTime.Now;
+                            referenceEntity.CreatedByUserId = "1";//hard coded user id
+
+                            break;
+                        case EntityState.Deleted:
+                        case EntityState.Modified:
+                            referenceEntity.LastModifiedDate = DateTime.Now;
+                            referenceEntity.LastModifiedUserId = "1";//hard coded user id
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+            return base.SaveChanges();
+        }
+
     }
 }

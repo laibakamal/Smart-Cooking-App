@@ -4,8 +4,8 @@
 $(document).ready(function () {
 
     $('#see-more').click(function () {
-        $.get("/Userr/Album", function (result) {
-            $('#partialPlaceHolder').append(result);
+        $.get("/Recipe/Album", function (result) {
+            $('#partialPlaceHolder').html(result);
         });
     });
 });

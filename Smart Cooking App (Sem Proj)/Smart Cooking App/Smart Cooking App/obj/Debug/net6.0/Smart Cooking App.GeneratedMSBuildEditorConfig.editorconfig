@@ -23,10 +23,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5Ib21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/EEEEEEEEEEE/SEMESTER 6/Visual Studio Projects/Smart Cooking App (Sem Proj)/Smart Cooking App (Sem Proj)/Smart Cooking App/Smart Cooking App/Views/Admin/EditRecipe.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdFJlY2lwZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [E:/EEEEEEEEEEE/SEMESTER 6/Visual Studio Projects/Smart Cooking App (Sem Proj)/Smart Cooking App (Sem Proj)/Smart Cooking App/Smart Cooking App/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -35,12 +31,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/EEEEEEEEEEE/SEMESTER 6/Visual Studio Projects/Smart Cooking App (Sem Proj)/Smart Cooking App (Sem Proj)/Smart Cooking App/Smart Cooking App/Views/Recipe/EditRecipe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlXEVkaXRSZWNpcGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/EEEEEEEEEEE/SEMESTER 6/Visual Studio Projects/Smart Cooking App (Sem Proj)/Smart Cooking App (Sem Proj)/Smart Cooking App/Smart Cooking App/Views/Recipe/RecipeDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlXFJlY2lwZURldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/EEEEEEEEEEE/SEMESTER 6/Visual Studio Projects/Smart Cooking App (Sem Proj)/Smart Cooking App (Sem Proj)/Smart Cooking App/Smart Cooking App/Views/Shared/Components/RecipeCard/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUmVjaXBlQ2FyZFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/EEEEEEEEEEE/SEMESTER 6/Visual Studio Projects/Smart Cooking App (Sem Proj)/Smart Cooking App (Sem Proj)/Smart Cooking App/Smart Cooking App/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/EEEEEEEEEEE/SEMESTER 6/Visual Studio Projects/Smart Cooking App (Sem Proj)/Smart Cooking App (Sem Proj)/Smart Cooking App/Smart Cooking App/Views/Shared/PartialViews/AdminAlbums.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxWaWV3c1xBZG1pbkFsYnVtcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/EEEEEEEEEEE/SEMESTER 6/Visual Studio Projects/Smart Cooking App (Sem Proj)/Smart Cooking App (Sem Proj)/Smart Cooking App/Smart Cooking App/Views/Shared/PartialViews/AdminRecipeCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxWaWV3c1xBZG1pblJlY2lwZUNhcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/EEEEEEEEEEE/SEMESTER 6/Visual Studio Projects/Smart Cooking App (Sem Proj)/Smart Cooking App (Sem Proj)/Smart Cooking App/Smart Cooking App/Views/Shared/PartialViews/Albums.cshtml]
@@ -55,8 +67,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxWaWV3c1xGb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/EEEEEEEEEEE/SEMESTER 6/Visual Studio Projects/Smart Cooking App (Sem Proj)/Smart Cooking App (Sem Proj)/Smart Cooking App/Smart Cooking App/Views/Shared/PartialViews/HomeAlbum.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxWaWV3c1xIb21lQWxidW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/EEEEEEEEEEE/SEMESTER 6/Visual Studio Projects/Smart Cooking App (Sem Proj)/Smart Cooking App (Sem Proj)/Smart Cooking App/Smart Cooking App/Views/Shared/PartialViews/Nav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxWaWV3c1xOYXYuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/EEEEEEEEEEE/SEMESTER 6/Visual Studio Projects/Smart Cooking App (Sem Proj)/Smart Cooking App (Sem Proj)/Smart Cooking App/Smart Cooking App/Views/Shared/PartialViews/RecipeCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxWaWV3c1xSZWNpcGVDYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/EEEEEEEEEEE/SEMESTER 6/Visual Studio Projects/Smart Cooking App (Sem Proj)/Smart Cooking App (Sem Proj)/Smart Cooking App/Smart Cooking App/Views/Shared/PartialViews/_NavBar.cshtml]
@@ -93,10 +113,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/EEEEEEEEEEE/SEMESTER 6/Visual Studio Projects/Smart Cooking App (Sem Proj)/Smart Cooking App (Sem Proj)/Smart Cooking App/Smart Cooking App/Views/Userr/Pricing.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnJcUHJpY2luZy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/EEEEEEEEEEE/SEMESTER 6/Visual Studio Projects/Smart Cooking App (Sem Proj)/Smart Cooking App (Sem Proj)/Smart Cooking App/Smart Cooking App/Views/Userr/RecipeDetail.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnJcUmVjaXBlRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/EEEEEEEEEEE/SEMESTER 6/Visual Studio Projects/Smart Cooking App (Sem Proj)/Smart Cooking App (Sem Proj)/Smart Cooking App/Smart Cooking App/Views/Userr/Signup.cshtml]

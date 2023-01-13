@@ -9,31 +9,75 @@ namespace Smart_Cooking_App.Repositories
     {
         public IList<Recipe> GetRecipes()
         {
+            var db = new SmartCookingAppContext();
+            IList<Recipe> recipes = db.Recipe.ToList();
+            return recipes;
+        }
 
-            IList<Recipe> List = new List<Recipe>();
-            string ConString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=SmartCookingApp;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-            SqlConnection con = new SqlConnection(ConString);
-            con.Open();
-            string Query = "select* from [Recipe]";
-            SqlCommand cmd = new SqlCommand(Query, con);
 
-            SqlDataReader dr = cmd.ExecuteReader();
-            while (dr.Read())
+
+        public Recipe GetRecipeDetail(int id)
+        {
+
+            var db = new SmartCookingAppContext();
+            List<Recipe> query = db.Recipe.Where(r => r.Id == id).ToList<Recipe>();
+
+            foreach (var recipee in query)
             {
-                Recipe recipe = new Recipe();
-
-                recipe.Id= Convert.ToInt32(dr[0]);
-                recipe.Name = dr[1].ToString();
-                recipe.Detail = dr[2].ToString();
-                recipe.Ingredients= dr[3].ToString();
-                recipe.ImagePath=dr[4].ToString();
-                recipe.ThumbnailText=dr[5].ToString();
-
-                List.Add(recipe);
+                return recipee;
             }
-            con.Close();
+            return new Recipe();
 
-            return List;
+        }
+
+
+
+        public IActionResult addRecipe(Recipe u)
+        {
+            //*************************ADD INTO DATABASE******************************** 
+
+            Recipe temp = new Recipe();
+            temp.Name = u.Name;
+            temp.Detail = u.Detail;
+            temp.Ingredients = u.Ingredients;
+            temp.ThumbnailText = u.ThumbnailText;
+            temp.ImagePath= u.ImagePath;
+            var db = new SmartCookingAppContext();
+            db.Recipe.Add(temp);
+            db.SaveChanges();
+            Console.WriteLine("successssssss");
+            return View();
+        }
+
+
+
+        public IActionResult updateRecipe(Recipe u)
+        {
+            //*************************ADD INTO DATABASE******************************** 
+
+            SmartCookingAppContext db = new SmartCookingAppContext();
+            Recipe temp = db.Recipe.Where(r => r.Id==u.Id).FirstOrDefault();
+            temp.Name = u.Name;
+            temp.Detail = u.Detail;
+            temp.Ingredients = u.Ingredients;
+            temp.ThumbnailText = u.ThumbnailText;
+            db.Recipe.Update(temp);
+            db.SaveChanges();
+            Console.WriteLine("successssssss");
+            return View();
+        }
+
+
+
+        public Recipe GetRecipeById(int id)
+        {
+            var db = new SmartCookingAppContext();
+            Recipe r = db.Recipe.Find(id);
+
+            return r;
+
         }
     }
+
 }
+

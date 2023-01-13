@@ -1,0 +1,94 @@
+﻿
+@using Smart_Cooking_App.Models;
+@model Recipe
+<!-- JQUERY STEP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.min.js"></script>
+
+
+
+   <partial name="~/Views/Shared/PartialViews/Nav.cshtml"/>
+
+<div class="mx-5 my-5 px-5 py-5"style="background-color: #ffd69d; border-radius: 25px">
+    <div class="wrapper">
+        <form enctype="multipart/form-data" method="post" asp-action="AddRecipe" asp-controller="Recipe">
+                <div class="form-row"> 
+                    
+                        <label asp-for="Name" class="form-label">Enter Recipe Name</label>
+                      <input asp-for="Name" class="form-control" id="name" type="text">
+                       <span asp-validation-for="Name" class ="errors" ></span>
+                </div>
+
+                
+                <div class="form-row"> 
+                    
+                        <label asp-for="Ingredients" class="form-label">Enter Ingredients</label>
+                      <input asp-for="Ingredients" class="form-control" id="name" type="text">
+                       <span asp-validation-for="Ingredients" class ="errors" ></span>
+                </div>
+
+                <div class="form-row"> 
+                    
+                        <label asp-for="Detail" class="form-label">Enter Steps</label>
+                      <input asp-for="Detail" class="form-control" id="name" type="text">
+                       <span asp-validation-for="Detail" class ="errors" ></span>
+                </div>
+                
+                <div class="form-row"> 
+                    
+                        <label asp-for="ThumbnailText" class="form-label">Enter Thumbnail Text</label>
+                      <input asp-for="ThumbnailText" class="form-control" id="name" type="text">
+                       <span asp-validation-for="ThumbnailText" class ="errors" ></span>
+                </div>
+              
+                <span>Select File: </span>
+                     <input type="file" id="postedFiles" name="files"  multiple/> 
+                     <button type="button" onclick="uploadFiles();"  >Upload File</button>
+
+                <span>@ViewBag.Message</span>
+                <img id="img1" src="Uploads/@ViewBag.FileName"/>
+
+                  <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                     <a asp-route="editRecipeRoutePost" asp-route-id="@Model.Id"  style="text-decoration:none; color:black;" class="btn btn-warning me-2">Update Recipe</a>
+
+                  </div>
+        </form>
+    </div>
+</div>
+
+
+
+     <footer class="bg-dark row row-cols-1 row-cols-sm-2 row-cols-md-5 mt-5 mb-0 py-5">
+        <partial name="~/Views/Shared/PartialViews/Footer.cshtml"/>
+     </footer>
+ 
+
+
+
+                
+                
+
+        
+ <script>
+         function uploadFiles() {
+          var input = document.getElementById("postedFiles"); //get file input id
+          var files = input.files; //get files
+          var formData = new FormData(); //create form
+
+          for (var i = 0; i != files.length; i++) {
+            formData.append("files", files[i]); //loop through all files and append
+          }
+
+          $.ajax(
+            {
+              url: "/Recipe/AjaxUpload",
+              data: formData, // send it as formData
+              processData: false,// tell jQuery not to process the data
+              contentType: false,// tell jQuery not to set contentType
+              type: "POST", //type is post as we will need to post files
+              success: function (data) {
+                alert("Files Uploaded!"+data);
+              }
+            }
+          );
+        }
+     </script>

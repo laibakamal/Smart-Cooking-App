@@ -4,6 +4,7 @@ using Smart_Cooking_App.Repositories;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IUserRepo, UserrRepository>();
 builder.Services.AddScoped<IRecipeRepo, RecipeRepository>();

@@ -1,0 +1,17 @@
+﻿
+
+<div class="album py-2">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          
+          @foreach (Recipe recipe in @Model) 
+          {
+        <div class="col">
+              <partial name="~/Views/Shared/PartialViews/RecipeCard.cshtml" model="@recipe"/>
+        </div>
+        
+        }
+      </div>
+    </div>
+  </div>

@@ -1,19 +1,50 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Smart_Cooking_App.Models;
-using Smart_Cooking_App.Repositories;
 using Smart_Cooking_App.Interfaces;
 
 namespace Smart_Cooking_App.Controllers
 {
     public class UserrController : Controller
     {
+        private readonly IRecipeRepo recipeRepo;
+        private readonly IUserRepo userRep;
+        private readonly ILogger<UserrController> _logger;
+
+        public UserrController(ILogger<UserrController> logger, IRecipeRepo recipeRepo, IUserRepo userRep)
+        {
+            _logger = logger;
+            this.recipeRepo = recipeRepo;
+            this.userRep = userRep;
+        }
+
         [HttpPost]
         public IActionResult Login(Userr u)
         {
+
+            IList<Recipe> list = recipeRepo.GetRecipes();
+            IList<Recipe> trimmedList = new List<Recipe>();
+
+            for (int count = 0; count<9; count++)
+            {
+                trimmedList.Add(list[count]);
+            }
+
             if (u.Email!=null && u.Password != null)
             {
+
+                if (!HttpContext.Request.Cookies.ContainsKey("request_one"))
+                {
+                    CookieOptions options = new CookieOptions();
+                    options.Expires = DateTime.Now.AddDays(1);
+                    HttpContext.Response.Cookies.Append("request_one", DateTime.Now.ToString(), options);
+                    // HttpContext.Response.Cookies.Append("request_one", DateTime.Now.ToString());
+                }
+                else
+                {
+                    Object data = u;
+                    HttpContext.Response.Cookies.Delete("request_one");
+                }
                 Console.WriteLine("Login done");
-                IUserRepo userRep = new UserrRepository();
                 if (userRep.UserExist(u))
                 {
                     IList<Userr> List;
@@ -23,10 +54,11 @@ namespace Smart_Cooking_App.Controllers
                     {
                         if (item.Email == u.Email && item.Role=="Admin")
                         {
-                            return View("/Views/Admin/AdminHome.cshtml");
+                            return View("/Views/Admin/AdminHome.cshtml", trimmedList);
                         }
                     }
-                    return View("Welcome");
+
+                    return View("Welcome", trimmedList);
                 }
                 else
                 {
@@ -51,16 +83,16 @@ namespace Smart_Cooking_App.Controllers
         {
             //if (ModelState.IsValid)
             //{
-            IUserRepo userRepo = new UserrRepository();
-            if (userRepo.UserExistForLogin(u))
+            if (userRep.UserExistForLogin(u))
             {
                 ViewBag.UserExists = "Username or Email already exists";
                 return View();
             }
             else
             {
-                userRepo.addUser(u);
-                return View();
+                userRep.addUser(u);
+                return View("Login");
+
                 //return View("Login");
             }
             //}
@@ -71,6 +103,9 @@ namespace Smart_Cooking_App.Controllers
             //}
 
         }
+
+
+
         [HttpGet]
         public IActionResult Signup()
         {
@@ -82,7 +117,6 @@ namespace Smart_Cooking_App.Controllers
         [HttpGet]
         public ViewResult Home()
         {
-            IRecipeRepo recipeRepo = new RecipeRepository();
             IList<Recipe> list = recipeRepo.GetRecipes();
             IList<Recipe> trimmedList = new List<Recipe>();
 
@@ -90,15 +124,13 @@ namespace Smart_Cooking_App.Controllers
             {
                 trimmedList.Add(list[count]);
             }
-            GlobalVariable.RecipeCount=(GlobalVariable.RecipeCount+9);
-            return View(trimmedList);
+            return View("Home", trimmedList);
         }
 
 
-        [HttpGet]
         public IActionResult Album()
         {
-            IRecipeRepo recipeRepo = new RecipeRepository();
+
             IList<Recipe> list = recipeRepo.GetRecipes();
             IList<Recipe> trimmedList = new List<Recipe>();
 
@@ -137,12 +169,6 @@ namespace Smart_Cooking_App.Controllers
             return View("Features");
         }
 
-
-        [HttpGet]
-        public IActionResult RecipeDetail()
-        {
-            return View("RecipeDetail");
-        }
 
         [HttpGet]
         public IActionResult Welcome()

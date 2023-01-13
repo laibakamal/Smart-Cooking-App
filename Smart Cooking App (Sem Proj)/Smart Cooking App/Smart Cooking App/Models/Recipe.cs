@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Smart_Cooking_App.Models
 {
-    public class Recipe
+    public class Recipe : FullAuditModel
     {
         public int Id { get; set; }
 

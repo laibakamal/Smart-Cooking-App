@@ -1,0 +1,14 @@
+﻿<div class="card shadow-sm" style="border: 3px solid orange; border-radius: 10px; width: 25rem; height: 28rem;">
+             <img src="~/Images/AlbumThumbnails/1.png"/>
+            <div class="card-body">
+                <h5 class="card-title">@Model.Name</h5>
+              <p class="card-text">@Model.Detail</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                 <a asp-route="recipeDetailsRoute" asp-route-id="@Model.Id"  style="text-decoration:none; color:black;" class="btn btn-warning me-2">View</a>
+                   <a asp-route="editRecipeRoute" asp-route-id="@Model.Id"  style="text-decoration:none; color:black;" class="btn btn-warning me-2">Edit</a>
+                </div>  
+                <small class="text-muted">3 mins</small>
+              </div>
+            </div>
+  </div>
